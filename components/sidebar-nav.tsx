@@ -1,72 +1,88 @@
 "use client"
 
 import { useState, useEffect } from "react"
-// Replaced next/link and next/navigation with standard html/js to resolve build errors
-// import Link from "next/link"
-// import { usePathname } from "next/navigation"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { 
   LayoutDashboard, 
-  Brain, 
-  FolderKanban, 
-  Feather, 
-  User, 
-  ScrollText, 
+  Cpu, 
+  Code2, 
   Bot,
   Menu,
-  X
+  X,
+  Zap
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChatPanel } from "./chat-panel"
 
 const navItems = [
-  { icon: LayoutDashboard, label: "Home", href: "/", color: "text-white" },
-  { icon: Brain, label: "Kaggle", href: "/kaggle", color: "text-yellow-400" },
-  { icon: FolderKanban, label: "Projects", href: "/projects", color: "text-blue-400" },
-  { icon: Feather, label: "Writing", href: "/writing", color: "text-violet-400" }, 
-  { icon: ScrollText, label: "Research", href: "/research", color: "text-green-400" }, 
-  { icon: User, label: "About Me", href: "/about", color: "text-red-400" },
+  { id: "playground", icon: LayoutDashboard, label: "Playground", color: "text-blue-400" },
+  { id: "model-card", icon: Cpu, label: "Model", color: "text-purple-400" },
+  { id: "developer", icon: Code2, label: "Developer", color: "text-green-400" },
 ]
 
 export function SidebarNav() {
-  // Manual pathname handling since next/navigation is unavailable in this build environment
-  const [pathname, setPathname] = useState("/")
+  const [activeView, setActiveView] = useState("playground")
   const [isChatOpen, setIsChatOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  // Handle initial load and browser back/forward buttons
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setPathname(window.location.pathname)
+      const params = new URLSearchParams(window.location.search)
+      const view = params.get("view") || "playground"
+      setActiveView(view)
     }
+
+    const handlePopState = () => {
+       const params = new URLSearchParams(window.location.search)
+       const view = params.get("view") || "playground"
+       setActiveView(view)
+       window.dispatchEvent(new CustomEvent('nav-change', { detail: view }))
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
   }, [])
 
-  // Close mobile menu when route changes
-  useEffect(() => {
-    const handleResize = () => {
-       if (window.innerWidth >= 768) {
-           setIsMobileMenuOpen(false);
-       }
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [])
+  const handleNavClick = (viewId: string) => {
+    setActiveView(viewId)
+    setIsMobileMenuOpen(false)
+    
+    // Update URL without reload
+    const newUrl = `?view=${viewId}`
+    window.history.pushState({ path: newUrl }, '', newUrl)
+    
+    // Dispatch custom event for page.tsx to listen to
+    window.dispatchEvent(new CustomEvent('nav-change', { detail: viewId }))
+  }
 
   // Reusable Navigation Content
   const NavContent = () => (
     <>
       <div className="border-b border-white/[0.08] p-6">
-        <h1 className="font-mono text-xl font-bold tracking-tighter text-white">
-          Harshith Varma
-        </h1>
-        <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mt-1">Storyteller with Data</p>
+        <div className="flex items-center gap-3">
+           <div className="p-2 bg-red-500/10 rounded-lg">
+             <Zap className="h-5 w-5 text-red-500" />
+           </div>
+           <div>
+            <h1 className="font-mono text-lg font-bold tracking-tighter text-white leading-none">
+              ToxicSense
+            </h1>
+            <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mt-1">AI Safety Layer</p>
+           </div>
+        </div>
       </div>
 
       <nav className="flex-1 space-y-1 p-4">
         {navItems.map((item) => {
-          const isActive = pathname === item.href
+          const isActive = activeView === item.id
           return (
-            <a key={item.href} href={item.href} className="block">
-              <div className="relative">
+            <button 
+              key={item.id} 
+              onClick={() => handleNavClick(item.id)} 
+              className="block w-full text-left"
+            >
+              <div className="relative group">
                 {isActive && (
                   <motion.div
                     layoutId="activeIndicator"
@@ -82,14 +98,14 @@ export function SidebarNav() {
                   className={`flex items-center gap-3 rounded-lg px-4 py-3 text-sm transition-all ${
                     isActive
                       ? "bg-blue-500/10 text-blue-400"
-                      : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                      : "text-muted-foreground hover:bg-white/5 hover:text-white"
                   }`}
                 >
-                  <item.icon className={`size-5 ${isActive ? item.color : "text-muted-foreground"}`} />
+                  <item.icon className={`size-5 ${isActive ? item.color : "text-muted-foreground group-hover:text-white"}`} />
                   <span className="font-medium">{item.label}</span>
                 </div>
               </div>
-            </a>
+            </button>
           )
         })}
       </nav>
@@ -102,15 +118,15 @@ export function SidebarNav() {
           <div className="relative">
             <Avatar className="size-10 ring-1 ring-blue-500/50">
               <AvatarImage src="1739541342275.jpeg" />
-              <AvatarFallback className="bg-blue-900/50 text-blue-200 text-xs">HV</AvatarFallback>
+              <AvatarFallback className="bg-blue-900/50 text-blue-200 text-xs">AI</AvatarFallback>
             </Avatar>
             <div className="absolute bottom-0 right-0 size-2.5 bg-green-500 rounded-full border-2 border-[#0a0a0a]" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-white truncate">Harshith Varma</p>
+            <p className="text-sm font-semibold text-white truncate">Model Agent</p>
             <div className="flex items-center gap-1.5 mt-0.5">
               <Bot className="w-3 h-3 text-blue-400" />
-              <p className="text-[10px] text-blue-400 truncate">AI Agent Active</p>
+              <p className="text-[10px] text-blue-400 truncate">Online</p>
             </div>
           </div>
         </div>
@@ -121,14 +137,12 @@ export function SidebarNav() {
   return (
     <>
       {/* 1. Mobile Header (Visible only on mobile) */}
-      {/* UPDATE: Increased z-index to z-[100] to ensure it is above all page content */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-[100] flex items-center justify-between p-4 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/[0.08]">
         <div className="flex items-center gap-3">
-             <Avatar className="size-8 ring-1 ring-blue-500/30">
-                <AvatarImage src="1739541342275.jpeg" />
-                <AvatarFallback className="bg-blue-900/50 text-blue-200 text-xs">HV</AvatarFallback>
-             </Avatar>
-             <span className="font-mono font-bold text-white text-sm">Harshith Varma</span>
+              <div className="p-1.5 bg-red-500/10 rounded-md">
+                 <Zap className="h-4 w-4 text-red-500" />
+              </div>
+              <span className="font-mono font-bold text-white text-sm">ToxicSense</span>
         </div>
         <button 
           onClick={() => setIsMobileMenuOpen(true)}
@@ -148,7 +162,6 @@ export function SidebarNav() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -156,7 +169,6 @@ export function SidebarNav() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="fixed inset-0 z-[101] bg-black/60 backdrop-blur-sm md:hidden"
             />
-            {/* Drawer */}
             <motion.div 
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
