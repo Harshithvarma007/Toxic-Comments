@@ -247,7 +247,7 @@ export default function ProjectShowcase() {
                   size="lg" 
                   variant="outline" 
                   className="rounded-full px-6 border-zinc-800 text-zinc-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-700 h-12 gap-2"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://medium.com/@harshith007varma007/end-to-end-machine-learning-project-part-i-c29c2b982055', '_blank')}
                 >
                   <FileText className="w-4 h-4 text-blue-400" />
                   Read Blog
@@ -257,7 +257,7 @@ export default function ProjectShowcase() {
                   size="lg" 
                   variant="outline" 
                   className="rounded-full px-6 border-zinc-800 text-zinc-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-700 h-12 gap-2"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://www.kaggle.com/code/harshithvarma007/toxic-comment-detection-98-1', '_blank')}
                 >
                   <Database className="w-4 h-4 text-yellow-400" />
                   Notebook
@@ -267,7 +267,7 @@ export default function ProjectShowcase() {
                   size="lg" 
                   variant="outline" 
                   className="rounded-full px-6 border-zinc-800 text-zinc-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-700 h-12 gap-2"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/harshith-varma-668a7a23b/', '_blank')}
                 >
                   <Linkedin className="w-4 h-4 text-blue-600" />
                   LinkedIn
@@ -279,7 +279,7 @@ export default function ProjectShowcase() {
                 <Button 
                   size="sm" 
                   className="rounded-full bg-white text-black hover:bg-zinc-200 gap-2 font-medium"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://harshithvarma.in/', '_blank')}
                 >
                   <User className="w-4 h-4" />
                   View Portfolio
