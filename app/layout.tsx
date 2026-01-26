@@ -30,7 +30,7 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          forceTheme="dark" // Enforcing dark mode for the specific aesthetic
+          forcedTheme="dark" // Enforcing dark mode for the specific aesthetic
           disableTransitionOnChange
         >
           {children}
