@@ -1,2 +1,37 @@
-/.next
-/node_modules
+# Python
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+dist/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Data + model artefacts (distributed via GitHub Releases, see scripts/fetch_model.sh)
+ml/data/
+ml/artifacts/
+ml/logs/
+ml/kaggle/kernel/
+api/model/
+extension/model/
+extension/*.zip
+*.onnx
+
+# Video: licensed audio is copied in locally (video/scripts/copy-audio.sh), renders are release assets
+video/public/audio/
+video/out/
+
+# Env / OS
+.env
+.env.local
+.DS_Store
+.claude/settings.local.json
+toxic-model-onnx.tar.gz
+.claude/
+extension/test/e2e-youtube.png

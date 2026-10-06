@@ -1,0 +1,1165 @@
+{
+  "balanced": [
+    {
+      "id": 1,
+      "author": "@mayaexplores",
+      "ago": "2 weeks ago",
+      "likes": 1200,
+      "text": "My 8 year old watched this three times and then made her own volcano. Thank you!!",
+      "toxic": false,
+      "score": 0.0008,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0008,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 2,
+      "author": "@trollface_99",
+      "ago": "2 weeks ago",
+      "likes": 3,
+      "text": "this is the dumbest video on youtube, you are a complete moron",
+      "toxic": true,
+      "score": 0.99,
+      "labels": [
+        "toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.99,
+        "severe_toxic": 0.0569,
+        "obscene": 0.769,
+        "threat": 0.0344,
+        "insult": 0.8319,
+        "identity_hate": 0.1409
+      }
+    },
+    {
+      "id": 3,
+      "author": "@geologynerd",
+      "ago": "2 weeks ago",
+      "likes": 640,
+      "text": "Small correction at 3:12: magma chambers are usually several kilometres deep, not hundreds of metres. Still a great video.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 4,
+      "author": "@k1d_gamer",
+      "ago": "2 weeks ago",
+      "likes": 88,
+      "text": "who else is here for homework 😂",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 5,
+      "author": "@anon48213",
+      "ago": "2 weeks ago",
+      "likes": 0,
+      "text": "shut the f*** up nobody cares about your stupid baking soda",
+      "toxic": true,
+      "score": 0.9892,
+      "labels": [
+        "toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.9892,
+        "severe_toxic": 0.0943,
+        "obscene": 0.9491,
+        "threat": 0.0098,
+        "insult": 0.7777,
+        "identity_hate": 0.0433
+      }
+    },
+    {
+      "id": 6,
+      "author": "@sciteacher_ro",
+      "ago": "13 days ago",
+      "likes": 410,
+      "text": "Using this in my 5th grade class tomorrow. The cross-section animation is perfect.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 7,
+      "author": "@realtalk",
+      "ago": "13 days ago",
+      "likes": 12,
+      "text": "I don't think the vinegar reaction is a good analogy, it's a gas release not a pressure build-up. Disagree with the framing.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 8,
+      "author": "@xXvoidXx",
+      "ago": "12 days ago",
+      "likes": 1,
+      "text": "the host is so ugly lmao kill yourself",
+      "toxic": true,
+      "score": 0.9497,
+      "labels": [
+        "toxic",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.9497,
+        "severe_toxic": 0.0745,
+        "obscene": 0.1806,
+        "threat": 0.3388,
+        "insult": 0.7469,
+        "identity_hate": 0.5441
+      }
+    },
+    {
+      "id": 9,
+      "author": "@pebble.mom",
+      "ago": "12 days ago",
+      "likes": 95,
+      "text": "Can you do one about earthquakes next? My son is obsessed.",
+      "toxic": false,
+      "score": 0.0073,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0073,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0011,
+        "threat": 0.0002,
+        "insult": 0.0008,
+        "identity_hate": 0.0003
+      }
+    },
+    {
+      "id": 10,
+      "author": "@hatewatch",
+      "ago": "11 days ago",
+      "likes": 2,
+      "text": "people from that country are all animals, they deserve the eruptions",
+      "toxic": false,
+      "score": 0.2528,
+      "labels": [],
+      "scores": {
+        "toxic": 0.2528,
+        "severe_toxic": 0.0003,
+        "obscene": 0.0062,
+        "threat": 0.0015,
+        "insult": 0.0193,
+        "identity_hate": 0.0035
+      }
+    },
+    {
+      "id": 11,
+      "author": "@lavalamp",
+      "ago": "11 days ago",
+      "likes": 230,
+      "text": "The slow-mo shot of the foam overflowing is genuinely beautiful",
+      "toxic": false,
+      "score": 0.0011,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0011,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 12,
+      "author": "@quietreader",
+      "ago": "10 days ago",
+      "likes": 17,
+      "text": "Is it safe to do this indoors? Asking before my kids destroy the kitchen.",
+      "toxic": false,
+      "score": 0.0058,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0058,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0009,
+        "threat": 0.0002,
+        "insult": 0.0007,
+        "identity_hate": 0.0003
+      }
+    },
+    {
+      "id": 13,
+      "author": "@angryuncle",
+      "ago": "10 days ago",
+      "likes": 0,
+      "text": "what a pathetic loser, get a real job instead of playing with vinegar you idiot",
+      "toxic": true,
+      "score": 0.9873,
+      "labels": [
+        "toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.9873,
+        "severe_toxic": 0.0616,
+        "obscene": 0.6083,
+        "threat": 0.0766,
+        "insult": 0.8365,
+        "identity_hate": 0.2476
+      }
+    },
+    {
+      "id": 14,
+      "author": "@stemgirl",
+      "ago": "9 days ago",
+      "likes": 520,
+      "text": "I'm 11 and I want to be a volcanologist now 🌋",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 15,
+      "author": "@dontclick",
+      "ago": "9 days ago",
+      "likes": 4,
+      "text": "this channel is s**t and so are the people who watch it",
+      "toxic": true,
+      "score": 0.6509,
+      "labels": [
+        "toxic"
+      ],
+      "scores": {
+        "toxic": 0.6509,
+        "severe_toxic": 0.0022,
+        "obscene": 0.2317,
+        "threat": 0.001,
+        "insult": 0.0706,
+        "identity_hate": 0.0031
+      }
+    },
+    {
+      "id": 16,
+      "author": "@historybuff",
+      "ago": "8 days ago",
+      "likes": 77,
+      "text": "Fun fact: Pompeii was preserved because the ash fell so quickly.",
+      "toxic": false,
+      "score": 0.0019,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0019,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0005,
+        "threat": 0.0001,
+        "insult": 0.0003,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 17,
+      "author": "@n0body",
+      "ago": "8 days ago",
+      "likes": 0,
+      "text": "I know where you film these. watch your back.",
+      "toxic": false,
+      "score": 0.0214,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0214,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0021,
+        "threat": 0.0002,
+        "insult": 0.0017,
+        "identity_hate": 0.0004
+      }
+    },
+    {
+      "id": 18,
+      "author": "@dadjokes",
+      "ago": "7 days ago",
+      "likes": 310,
+      "text": "I lava this video. Sorry. Not sorry.",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 19,
+      "author": "@meanstreak",
+      "ago": "7 days ago",
+      "likes": 1,
+      "text": "only an idiot would believe this garbage, you're braindead",
+      "toxic": true,
+      "score": 0.992,
+      "labels": [
+        "toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.992,
+        "severe_toxic": 0.0768,
+        "obscene": 0.8249,
+        "threat": 0.0394,
+        "insult": 0.8621,
+        "identity_hate": 0.161
+      }
+    },
+    {
+      "id": 20,
+      "author": "@parent_of_3",
+      "ago": "6 days ago",
+      "likes": 44,
+      "text": "Wish the music was a bit quieter, hard to hear the narration on a phone speaker.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 21,
+      "author": "@bigot_alt",
+      "ago": "6 days ago",
+      "likes": 0,
+      "text": "go back to your own country, nobody wants your kind here",
+      "toxic": true,
+      "score": 0.6011,
+      "labels": [
+        "toxic"
+      ],
+      "scores": {
+        "toxic": 0.6011,
+        "severe_toxic": 0.0012,
+        "obscene": 0.0152,
+        "threat": 0.0077,
+        "insult": 0.0896,
+        "identity_hate": 0.0191
+      }
+    },
+    {
+      "id": 22,
+      "author": "@curiouscat",
+      "ago": "5 days ago",
+      "likes": 61,
+      "text": "What's the difference between lava and magma? Is it just location?",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 23,
+      "author": "@reply_guy",
+      "ago": "5 days ago",
+      "likes": 9,
+      "text": "@curiouscat yes! magma is underground, lava is once it reaches the surface.",
+      "toxic": false,
+      "score": 0.0013,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0013,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0004,
+        "threat": 0.0001,
+        "insult": 0.0003,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 24,
+      "author": "@spamlord",
+      "ago": "4 days ago",
+      "likes": 0,
+      "text": "f*** this f***ing channel and f*** you",
+      "toxic": true,
+      "score": 0.9951,
+      "labels": [
+        "toxic",
+        "severe_toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.9951,
+        "severe_toxic": 0.5221,
+        "obscene": 0.9909,
+        "threat": 0.0412,
+        "insult": 0.9267,
+        "identity_hate": 0.1434
+      }
+    },
+    {
+      "id": 25,
+      "author": "@grandpa_joe",
+      "ago": "4 days ago",
+      "likes": 150,
+      "text": "Watched this with my grandkids. We all learned something.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 26,
+      "author": "@critic",
+      "ago": "3 days ago",
+      "likes": 21,
+      "text": "Honestly the first half drags a bit. The experiment part is the best bit, lead with that.",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 27,
+      "author": "@ragequit",
+      "ago": "3 days ago",
+      "likes": 0,
+      "text": "you sound like a r*tard, stop making videos",
+      "toxic": true,
+      "score": 0.959,
+      "labels": [
+        "toxic",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.959,
+        "severe_toxic": 0.0085,
+        "obscene": 0.4229,
+        "threat": 0.0071,
+        "insult": 0.4742,
+        "identity_hate": 0.0302
+      }
+    },
+    {
+      "id": 28,
+      "author": "@volcanofan",
+      "ago": "2 days ago",
+      "likes": 33,
+      "text": "Do a part 2 on supervolcanoes please!!",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 29,
+      "author": "@edgelord",
+      "ago": "2 days ago",
+      "likes": 2,
+      "text": "I hope a volcano erupts on your house with you in it",
+      "toxic": false,
+      "score": 0.4209,
+      "labels": [],
+      "scores": {
+        "toxic": 0.4209,
+        "severe_toxic": 0.0008,
+        "obscene": 0.0081,
+        "threat": 0.0057,
+        "insult": 0.0495,
+        "identity_hate": 0.0128
+      }
+    },
+    {
+      "id": 30,
+      "author": "@kindnessmatters",
+      "ago": "1 day ago",
+      "likes": 58,
+      "text": "The comments here are wild. Great video, ignore the haters ❤️",
+      "toxic": false,
+      "score": 0.1957,
+      "labels": [],
+      "scores": {
+        "toxic": 0.1957,
+        "severe_toxic": 0.0002,
+        "obscene": 0.0084,
+        "threat": 0.0007,
+        "insult": 0.012,
+        "identity_hate": 0.0016
+      }
+    }
+  ],
+  "strict": [
+    {
+      "id": 1,
+      "author": "@mayaexplores",
+      "ago": "2 weeks ago",
+      "likes": 1200,
+      "text": "My 8 year old watched this three times and then made her own volcano. Thank you!!",
+      "toxic": false,
+      "score": 0.0008,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0008,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 2,
+      "author": "@trollface_99",
+      "ago": "2 weeks ago",
+      "likes": 3,
+      "text": "this is the dumbest video on youtube, you are a complete moron",
+      "toxic": true,
+      "score": 0.99,
+      "labels": [
+        "toxic",
+        "obscene",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.99,
+        "severe_toxic": 0.0569,
+        "obscene": 0.769,
+        "threat": 0.0344,
+        "insult": 0.8319,
+        "identity_hate": 0.1409
+      }
+    },
+    {
+      "id": 3,
+      "author": "@geologynerd",
+      "ago": "2 weeks ago",
+      "likes": 640,
+      "text": "Small correction at 3:12: magma chambers are usually several kilometres deep, not hundreds of metres. Still a great video.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 4,
+      "author": "@k1d_gamer",
+      "ago": "2 weeks ago",
+      "likes": 88,
+      "text": "who else is here for homework 😂",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 5,
+      "author": "@anon48213",
+      "ago": "2 weeks ago",
+      "likes": 0,
+      "text": "shut the f*** up nobody cares about your stupid baking soda",
+      "toxic": true,
+      "score": 0.9892,
+      "labels": [
+        "toxic",
+        "severe_toxic",
+        "obscene",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.9892,
+        "severe_toxic": 0.0943,
+        "obscene": 0.9491,
+        "threat": 0.0098,
+        "insult": 0.7777,
+        "identity_hate": 0.0433
+      }
+    },
+    {
+      "id": 6,
+      "author": "@sciteacher_ro",
+      "ago": "13 days ago",
+      "likes": 410,
+      "text": "Using this in my 5th grade class tomorrow. The cross-section animation is perfect.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 7,
+      "author": "@realtalk",
+      "ago": "13 days ago",
+      "likes": 12,
+      "text": "I don't think the vinegar reaction is a good analogy, it's a gas release not a pressure build-up. Disagree with the framing.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 8,
+      "author": "@xXvoidXx",
+      "ago": "12 days ago",
+      "likes": 1,
+      "text": "the host is so ugly lmao kill yourself",
+      "toxic": true,
+      "score": 0.9497,
+      "labels": [
+        "toxic",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.9497,
+        "severe_toxic": 0.0745,
+        "obscene": 0.1806,
+        "threat": 0.3388,
+        "insult": 0.7469,
+        "identity_hate": 0.5441
+      }
+    },
+    {
+      "id": 9,
+      "author": "@pebble.mom",
+      "ago": "12 days ago",
+      "likes": 95,
+      "text": "Can you do one about earthquakes next? My son is obsessed.",
+      "toxic": false,
+      "score": 0.0073,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0073,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0011,
+        "threat": 0.0002,
+        "insult": 0.0008,
+        "identity_hate": 0.0003
+      }
+    },
+    {
+      "id": 10,
+      "author": "@hatewatch",
+      "ago": "11 days ago",
+      "likes": 2,
+      "text": "people from that country are all animals, they deserve the eruptions",
+      "toxic": false,
+      "score": 0.2528,
+      "labels": [],
+      "scores": {
+        "toxic": 0.2528,
+        "severe_toxic": 0.0003,
+        "obscene": 0.0062,
+        "threat": 0.0015,
+        "insult": 0.0193,
+        "identity_hate": 0.0035
+      }
+    },
+    {
+      "id": 11,
+      "author": "@lavalamp",
+      "ago": "11 days ago",
+      "likes": 230,
+      "text": "The slow-mo shot of the foam overflowing is genuinely beautiful",
+      "toxic": false,
+      "score": 0.0011,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0011,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0003,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 12,
+      "author": "@quietreader",
+      "ago": "10 days ago",
+      "likes": 17,
+      "text": "Is it safe to do this indoors? Asking before my kids destroy the kitchen.",
+      "toxic": false,
+      "score": 0.0058,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0058,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0009,
+        "threat": 0.0002,
+        "insult": 0.0007,
+        "identity_hate": 0.0003
+      }
+    },
+    {
+      "id": 13,
+      "author": "@angryuncle",
+      "ago": "10 days ago",
+      "likes": 0,
+      "text": "what a pathetic loser, get a real job instead of playing with vinegar you idiot",
+      "toxic": true,
+      "score": 0.9873,
+      "labels": [
+        "toxic",
+        "obscene",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.9873,
+        "severe_toxic": 0.0616,
+        "obscene": 0.6083,
+        "threat": 0.0766,
+        "insult": 0.8365,
+        "identity_hate": 0.2476
+      }
+    },
+    {
+      "id": 14,
+      "author": "@stemgirl",
+      "ago": "9 days ago",
+      "likes": 520,
+      "text": "I'm 11 and I want to be a volcanologist now 🌋",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0001,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 15,
+      "author": "@dontclick",
+      "ago": "9 days ago",
+      "likes": 4,
+      "text": "this channel is s**t and so are the people who watch it",
+      "toxic": true,
+      "score": 0.6509,
+      "labels": [
+        "toxic"
+      ],
+      "scores": {
+        "toxic": 0.6509,
+        "severe_toxic": 0.0022,
+        "obscene": 0.2317,
+        "threat": 0.001,
+        "insult": 0.0706,
+        "identity_hate": 0.0031
+      }
+    },
+    {
+      "id": 16,
+      "author": "@historybuff",
+      "ago": "8 days ago",
+      "likes": 77,
+      "text": "Fun fact: Pompeii was preserved because the ash fell so quickly.",
+      "toxic": false,
+      "score": 0.0019,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0019,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0005,
+        "threat": 0.0001,
+        "insult": 0.0003,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 17,
+      "author": "@n0body",
+      "ago": "8 days ago",
+      "likes": 0,
+      "text": "I know where you film these. watch your back.",
+      "toxic": false,
+      "score": 0.0214,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0214,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0021,
+        "threat": 0.0002,
+        "insult": 0.0017,
+        "identity_hate": 0.0004
+      }
+    },
+    {
+      "id": 18,
+      "author": "@dadjokes",
+      "ago": "7 days ago",
+      "likes": 310,
+      "text": "I lava this video. Sorry. Not sorry.",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 19,
+      "author": "@meanstreak",
+      "ago": "7 days ago",
+      "likes": 1,
+      "text": "only an idiot would believe this garbage, you're braindead",
+      "toxic": true,
+      "score": 0.992,
+      "labels": [
+        "toxic",
+        "obscene",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.992,
+        "severe_toxic": 0.0768,
+        "obscene": 0.8249,
+        "threat": 0.0394,
+        "insult": 0.8621,
+        "identity_hate": 0.161
+      }
+    },
+    {
+      "id": 20,
+      "author": "@parent_of_3",
+      "ago": "6 days ago",
+      "likes": 44,
+      "text": "Wish the music was a bit quieter, hard to hear the narration on a phone speaker.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 21,
+      "author": "@bigot_alt",
+      "ago": "6 days ago",
+      "likes": 0,
+      "text": "go back to your own country, nobody wants your kind here",
+      "toxic": true,
+      "score": 0.6011,
+      "labels": [
+        "toxic"
+      ],
+      "scores": {
+        "toxic": 0.6011,
+        "severe_toxic": 0.0012,
+        "obscene": 0.0152,
+        "threat": 0.0077,
+        "insult": 0.0896,
+        "identity_hate": 0.0191
+      }
+    },
+    {
+      "id": 22,
+      "author": "@curiouscat",
+      "ago": "5 days ago",
+      "likes": 61,
+      "text": "What's the difference between lava and magma? Is it just location?",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 23,
+      "author": "@reply_guy",
+      "ago": "5 days ago",
+      "likes": 9,
+      "text": "@curiouscat yes! magma is underground, lava is once it reaches the surface.",
+      "toxic": false,
+      "score": 0.0013,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0013,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0004,
+        "threat": 0.0001,
+        "insult": 0.0003,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 24,
+      "author": "@spamlord",
+      "ago": "4 days ago",
+      "likes": 0,
+      "text": "f*** this f***ing channel and f*** you",
+      "toxic": true,
+      "score": 0.9951,
+      "labels": [
+        "toxic",
+        "severe_toxic",
+        "obscene",
+        "threat",
+        "insult",
+        "identity_hate"
+      ],
+      "scores": {
+        "toxic": 0.9951,
+        "severe_toxic": 0.5221,
+        "obscene": 0.9909,
+        "threat": 0.0412,
+        "insult": 0.9267,
+        "identity_hate": 0.1434
+      }
+    },
+    {
+      "id": 25,
+      "author": "@grandpa_joe",
+      "ago": "4 days ago",
+      "likes": 150,
+      "text": "Watched this with my grandkids. We all learned something.",
+      "toxic": false,
+      "score": 0.0006,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0006,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 26,
+      "author": "@critic",
+      "ago": "3 days ago",
+      "likes": 21,
+      "text": "Honestly the first half drags a bit. The experiment part is the best bit, lead with that.",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 27,
+      "author": "@ragequit",
+      "ago": "3 days ago",
+      "likes": 0,
+      "text": "you sound like a r*tard, stop making videos",
+      "toxic": true,
+      "score": 0.959,
+      "labels": [
+        "toxic",
+        "obscene",
+        "insult"
+      ],
+      "scores": {
+        "toxic": 0.959,
+        "severe_toxic": 0.0085,
+        "obscene": 0.4229,
+        "threat": 0.0071,
+        "insult": 0.4742,
+        "identity_hate": 0.0302
+      }
+    },
+    {
+      "id": 28,
+      "author": "@volcanofan",
+      "ago": "2 days ago",
+      "likes": 33,
+      "text": "Do a part 2 on supervolcanoes please!!",
+      "toxic": false,
+      "score": 0.0007,
+      "labels": [],
+      "scores": {
+        "toxic": 0.0007,
+        "severe_toxic": 0.0001,
+        "obscene": 0.0002,
+        "threat": 0.0002,
+        "insult": 0.0002,
+        "identity_hate": 0.0002
+      }
+    },
+    {
+      "id": 29,
+      "author": "@edgelord",
+      "ago": "2 days ago",
+      "likes": 2,
+      "text": "I hope a volcano erupts on your house with you in it",
+      "toxic": true,
+      "score": 0.4209,
+      "labels": [
+        "toxic"
+      ],
+      "scores": {
+        "toxic": 0.4209,
+        "severe_toxic": 0.0008,
+        "obscene": 0.0081,
+        "threat": 0.0057,
+        "insult": 0.0495,
+        "identity_hate": 0.0128
+      }
+    },
+    {
+      "id": 30,
+      "author": "@kindnessmatters",
+      "ago": "1 day ago",
+      "likes": 58,
+      "text": "The comments here are wild. Great video, ignore the haters ❤️",
+      "toxic": false,
+      "score": 0.1957,
+      "labels": [],
+      "scores": {
+        "toxic": 0.1957,
+        "severe_toxic": 0.0002,
+        "obscene": 0.0084,
+        "threat": 0.0007,
+        "insult": 0.012,
+        "identity_hate": 0.0016
+      }
+    }
+  ]
+}

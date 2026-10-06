@@ -1,0 +1,26 @@
+{
+  "name": "toxic-comments-launch-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Launch video for Toxic Comment Detection v2, built on the NOUS / Video OS visual system.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts LaunchVideo out/toxic-comments-launch.mp4",
+    "render:4k": "remotion render src/index.ts LaunchVideo4K out/toxic-comments-launch-4k.mp4",
+    "still": "remotion still src/index.ts LaunchVideo out/still.png",
+    "audio": "sh scripts/copy-audio.sh",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.516",
+    "@remotion/google-fonts": "4.0.516",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.516"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

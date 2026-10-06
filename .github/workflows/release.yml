@@ -1,0 +1,24 @@
+# Push a tag like v2.0.0 to publish the extension zip + model bundle as release assets.
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: scripts/fetch_model.sh
+      - run: pnpm --dir extension install --frozen-lockfile && pnpm --dir extension zip
+      - run: scripts/package_model.sh
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            extension/toxic-comments-extension.zip
+            toxic-model-onnx.tar.gz

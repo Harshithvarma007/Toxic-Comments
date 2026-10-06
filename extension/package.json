@@ -1,0 +1,17 @@
+{
+  "name": "toxic-comments-extension",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "zip": "node build.mjs && cd dist && zip -qr ../toxic-comments-extension.zip ."
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright-core": "1.62.0"
+  }
+}
