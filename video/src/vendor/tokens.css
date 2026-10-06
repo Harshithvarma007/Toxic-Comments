@@ -1,0 +1,140 @@
+/*
+ * Vendored from ~/harshith-design-system/DESIGN_SYSTEM.md §1 (dark theme only — a rendered
+ * video has no viewer-side toggle).
+ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --neutral-50: #14141c;
+  --neutral-100: #191820;
+  --neutral-150: #201d25;
+  --neutral-200: #2a2a38;
+  --neutral-300: #3f4257;
+  --neutral-500: #ad8eb6;
+  --neutral-600: #b1b6c4;
+  --neutral-700: #e4e6ec;
+  --white: #ffffff;
+
+  --accent-50: #f5c0c0;
+  --accent-100: #e3b2b3;
+  --accent-200: #99797d;
+  --accent-400: #f5c0c0;
+  --accent-500: #5f509d;
+  --accent-600: #473982;
+
+  --success: #2ba88a;
+  --warning: #d4a032;
+  --danger: #e54d62;
+  --info: #8abbff;
+
+  /* Categorical chart palette (fixed order) — reused for code syntax roles instead of a
+     borrowed editor-theme palette, so a code snippet still reads as part of this system. */
+  --chart-1: #D0438A;
+  --chart-2: #4380D0;
+  --chart-3: #997A26;
+  --chart-4: #24A8A8;
+  --chart-5: #8543D0;
+  --chart-6: #CC8033;
+
+  --bg-canvas: var(--neutral-50);
+  --bg-surface: var(--neutral-100);
+  --bg-surface-inset: var(--neutral-150);
+  --border-hairline: var(--neutral-200);
+  --border-strong: var(--neutral-300);
+  --text-peak: var(--white);
+  --text-primary: var(--neutral-700);
+  --text-secondary: var(--neutral-600);
+  --text-tertiary: var(--neutral-500);
+  --accent-border: var(--accent-600);
+
+  --font-display: 'Archivo', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
+  /* '@remotion/google-fonts's SourceSans3 module registers the family as "Source Sans Three"
+     (confirmed via its .d.ts `fontFamily` export), not "Source Sans 3" — listed first so the
+     loaded webfont actually matches instead of silently falling through to a system font. */
+  --font-body: 'Source Sans Three', 'Source Sans 3', 'Source Sans Pro', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Source Code Pro', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --text-label-mono-size: 0.75rem;
+  --text-label-mono-tracking: 0.06em;
+  --text-label-mono-leading: 1.5;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 64px;
+
+  --radius-sharp: 3px;
+  --border-width-strong: 1.5px;
+
+  --duration-base: 250ms;
+  --ease-standard: cubic-bezier(0.32, 0.08, 0.24, 1);
+}
+
+/*
+ * Crosshair frame — rebuilt from direct pixel analysis of image.png (the real Hex reference),
+ * NOT harshith-design-system's `.frame-corners` (rejected — see design-system/visual-library.md
+ * revision notes). Pixel sampling on image.png found:
+ *   - A continuous 1px outline around the ENTIRE box, accent color (#f5c0c0) at ~12% opacity
+ *     over the dark canvas — sampled rgb(51,43,49) against a ~rgb(26,26,32) background, which
+ *     solves to alpha ≈ 0.11–0.12 for that accent over that background.
+ *   - A short, bright accent-color tick at each corner — only ~7px per arm (NOT 14px), at
+ *     ~90% opacity (sampled rgb(223,169,170), alpha ≈ 0.90) — no rivet dot, no glow.
+ * This is one hue at two opacities, not two different colors.
+ */
+.frame-crosshair {
+  position: relative;
+  border: 1px solid rgba(245, 192, 192, 0.12);
+  /*
+   * Depth separation between the grain plane (behind) and the frame plane (this element) —
+   * the reference's own grain is flat/uniform, this is a deliberate video-native addition:
+   * a soft, dark, outward shadow so the frame reads as a raised surface over the textured
+   * background rather than flattening into it. Subtle by design — this is depth cueing, not
+   * a card/elevation effect (see DESIGN_SYSTEM.md §5's box-shadow rule, which is about not
+   * doing this to imply a card; this is a different, video-specific purpose).
+   */
+  box-shadow: 0 0 48px 8px rgba(0, 0, 0, 0.4);
+}
+/* Stronger variant for a frame nested inside another frame (e.g. a code window sitting inside
+   the outer scene frame) — needs to visually lift off the OUTER frame's own interior plane, not
+   just off the grain, so it reads as "popped out" rather than flush with its parent. */
+.frame-crosshair--pop {
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55), 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+/* Frosted glass material — mostly transparent, backdrop-blurred, so the grain/canvas behind it
+   still shows through softly instead of a flat opaque plate. Same "grain + glass" pairing as
+   design-system/visual-library.md §3's constant background, applied to a foreground card. */
+.frame-crosshair--glass {
+  background: rgba(20, 19, 26, 0.46);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+.frame-crosshair__mark {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  pointer-events: none;
+}
+.frame-crosshair__mark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(245, 192, 192, 0.9);
+}
+.frame-crosshair__mark--tl { top: -1px; left: -1px; }
+.frame-crosshair__mark--tl::before { border-right: none; border-bottom: none; }
+.frame-crosshair__mark--tr { top: -1px; right: -1px; }
+.frame-crosshair__mark--tr::before { border-left: none; border-bottom: none; }
+.frame-crosshair__mark--bl { bottom: -1px; left: -1px; }
+.frame-crosshair__mark--bl::before { border-right: none; border-top: none; }
+.frame-crosshair__mark--br { bottom: -1px; right: -1px; }
+.frame-crosshair__mark--br::before { border-left: none; border-top: none; }
+
+.frame-crosshair__tag {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: var(--text-label-mono-size);
+  letter-spacing: var(--text-label-mono-tracking);
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+.frame-crosshair__tag--tl { top: var(--space-3); left: var(--space-3); }
+.frame-crosshair__tag--bl { bottom: var(--space-3); left: var(--space-3); }

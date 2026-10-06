@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toxic Comment Filter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="frame" id="frame">
+      <svg class="glow" id="glow" aria-hidden="true"></svg>
+      <span class="tag">Toxic filter · YouTube</span>
+      <i class="mark tl"></i><i class="mark tr"></i><i class="mark bl"></i><i class="mark br"></i>
+
+      <div class="stat">
+        <span class="label">Filtered on this page</span>
+        <strong id="count">0</strong>
+      </div>
+
+      <fieldset>
+        <legend class="label">Filter</legend>
+        <div class="seg" data-key="mode">
+          <button value="off">Off</button><button value="blur">Blur</button><button value="hide">Hide</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="label">Level</legend>
+        <div class="seg" data-key="profile">
+          <button value="balanced">Balanced</button><button value="strict">Child-safe</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="label">Model runs</legend>
+        <div class="seg" data-key="backend">
+          <button value="local">On-device</button><button value="cloud">Cloud API</button>
+        </div>
+        <input id="apiUrl" type="url" spellcheck="false" aria-label="API URL" hidden />
+      </fieldset>
+
+      <p class="hint" id="hint"></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

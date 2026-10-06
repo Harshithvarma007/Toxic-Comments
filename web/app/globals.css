@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+/*
+ * NOUS / Harshith Design System — dark canvas, vendored from
+ * Video OS visuals/src/tokens.css (which mirrors ~/harshith-design-system/tokens/*.json).
+ * One accent hue (#f5c0c0) used at two opacities for the crosshair frame. Depth is luminance +
+ * hairline, never card shadows.
+ */
+:root {
+  --neutral-0: #0c0c12;
+  --neutral-50: #14141c;
+  --neutral-100: #191820;
+  --neutral-150: #201d25;
+  --neutral-200: #2a2a38;
+  --neutral-300: #3f4257;
+  --neutral-500: #ad8eb6;
+  --neutral-600: #b1b6c4;
+  --neutral-700: #e4e6ec;
+
+  --accent: #f5c0c0;
+  --accent-rgb: 245, 192, 192;
+  --accent-deep: #473982;
+  --success: #2ba88a;
+  --warning: #d4a032;
+  --danger: #e54d62;
+  --info: #8abbff;
+
+  --bg-canvas: var(--neutral-50);
+  --bg-ground: var(--neutral-0);
+  --bg-surface: var(--neutral-100);
+  --bg-inset: var(--neutral-150);
+  --line: var(--neutral-200);
+  --line-strong: var(--neutral-300);
+  --text-peak: #ffffff;
+  --text-primary: var(--neutral-700);
+  --text-secondary: var(--neutral-600);
+  --text-tertiary: var(--neutral-500);
+
+  --ease-standard: cubic-bezier(0.32, 0.08, 0.24, 1);
+  --radius-sharp: 3px;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-canvas: var(--bg-canvas);
+  --color-ground: var(--bg-ground);
+  --color-surface: var(--bg-surface);
+  --color-inset: var(--bg-inset);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-peak: var(--text-peak);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-tertiary: var(--text-tertiary);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+
+  --font-display: var(--font-archivo), "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-source-sans), -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-source-code), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --radius-sharp: 3px;
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  background: var(--bg-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(var(--accent-rgb), 0.22);
+  color: var(--text-peak);
+}
+
+/* Static paper grain — effects/static-paper-grain (dark tuning: white speckle, 16%). */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch' result='t'/%3E%3CfeColorMatrix in='t' type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* Faint engineering grid behind hero areas. */
+.blueprint {
+  background-image:
+    linear-gradient(to right, rgba(42, 42, 56, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 42, 56, 0.45) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+/*
+ * Crosshair frame — pixel-sampled from the Hex reference (Video OS tokens.css):
+ * continuous 1px outline at ~12% accent + 7px bright corner ticks at ~90% accent.
+ */
+.frame-crosshair {
+  position: relative;
+  border: 1px solid rgba(var(--accent-rgb), 0.12);
+}
+.frame-crosshair--glass {
+  background: rgba(20, 19, 26, 0.55);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+.frame-crosshair__mark {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  pointer-events: none;
+}
+.frame-crosshair__mark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(var(--accent-rgb), 0.9);
+}
+.frame-crosshair__mark--tl { top: -1px; left: -1px; }
+.frame-crosshair__mark--tl::before { border-right: none; border-bottom: none; }
+.frame-crosshair__mark--tr { top: -1px; right: -1px; }
+.frame-crosshair__mark--tr::before { border-left: none; border-bottom: none; }
+.frame-crosshair__mark--bl { bottom: -1px; left: -1px; }
+.frame-crosshair__mark--bl::before { border-right: none; border-top: none; }
+.frame-crosshair__mark--br { bottom: -1px; right: -1px; }
+.frame-crosshair__mark--br::before { border-left: none; border-top: none; }
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.measure {
+  max-width: 64ch;
+}
+
+/* Filtered comment treatments (demo + extension share the same look). */
+.tc-blur {
+  filter: blur(6px);
+  user-select: none;
+  transition: filter 250ms var(--ease-standard);
+}
+.tc-blur:hover {
+  filter: blur(0);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  animation: rise 600ms var(--ease-standard) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
+  html { scroll-behavior: auto; }
+}

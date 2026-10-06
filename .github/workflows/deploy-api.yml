@@ -1,0 +1,32 @@
+# Build the API image and deploy it to Google Cloud Run (scale-to-zero, pay per request).
+# One-time setup is in docs/DEPLOYMENT.md (Workload Identity Federation, no JSON keys).
+name: Deploy API
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["api/**"]
+permissions:
+  contents: read
+  id-token: write
+env:
+  REGION: ${{ vars.GCP_REGION || 'asia-south1' }}
+  SERVICE: toxic-api
+jobs:
+  deploy:
+    if: vars.GCP_PROJECT != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/fetch_model.sh
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOY_SA }}
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Build and deploy
+        run: |
+          gcloud run deploy "$SERVICE" --source api --region "$REGION" --project "${{ vars.GCP_PROJECT }}" \
+            --allow-unauthenticated --cpu 1 --memory 1Gi --concurrency 40 --min-instances 0 --max-instances 4 \
+            --set-env-vars "TOXIC_CORS_ORIGINS=${{ vars.CORS_ORIGINS || '*' }}" \
+            --set-secrets "TOXIC_API_KEYS=toxic-api-keys:latest"
